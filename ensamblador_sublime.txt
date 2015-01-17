@@ -1,0 +1,4 @@
+{
+    "cmd": ["~/runA.sh ${file} ${file_base_name}"],
+    "shell": true
+}
