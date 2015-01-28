@@ -1,25 +1,17 @@
-section .data
-
-msg db "Hola Mundo!!!!",0xA,0xD
-len equ $ - msg 
-
+section .data 
+	msg	db "Hola, Mundo!!!",0x0a
+	len equ $ - msg  ;longitus de msg
 
 section .text
-	global _start
-
-_start:
-	
-	mov eax, 4   ; llama al sistema (sys_write)
-	;eax = 4
-	mov ebx, 1	 ;stdout
-	mov ecx, msg ;msg pantalla
-	mov edx, len ;longitud del mensaje
-	int 0x80	;lamada al sistema de interrucciones
-	
-	mov eax, 1 ;(system("pause"),exit, sys_exit)
-	int 0x80
-
-
+	global _start       ;para el linker
+_start:		    ;marca la entrada
+	   mov eax, 4		;llamada al sistema (sys_write)
+	   mov ebx, 1		;descripcion de archivo (stdout)
+	   mov ecx, msg		;msg a escribir
+	   mov edx, len		;longitud del mensage
+	   int 0x80			;llama al sistema interrucciones
+	   mov eax, 1		;llamada al sistema (sys_exit)
+	   int 0x80
 	
 
 
