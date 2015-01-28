@@ -1,0 +1,13 @@
+descargar el codigo fuente de sublime text:
+http://www.sublimetext.com/
+
+descargar nasm:
+http://www.nasm.us/pub/nasm/releasebuilds/2.11.06/nasm-2.11.06.tar.bz2
+
+comandos para instalar nasm 
+$ sudo sh autogen.sh
+$ sh configure
+$ make
+$ make strip
+$ make install
+
