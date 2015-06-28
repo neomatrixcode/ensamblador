@@ -1,0 +1,25 @@
+http://www.sublimetext.com/
+
+
+descargar nasm:
+http://www.nasm.us/pub/nasm/releasebuilds/2.11.06/nasm-2.11.06.tar.bz2
+
+comandos para instalar nasm 
+$ sudo sh autogen.sh
+
+Then run configure to detect your platform settings and generate makefiles.
+
+$ sh configure
+
+
+
+$ make
+
+
+
+$ make strip
+
+
+
+$ make install
+

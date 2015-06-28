@@ -1,0 +1,14 @@
+gnu/linux ubuntu 32 bits
+nasm -f elf hello.asm
+ld -m elf_i386 -s -o hello hello.o
+./hello
+
+nota: prefiero la primera opcion
+
+gnu/linux ubuntu 64 bits
+nasm -f elf64 hello.asm
+ld -m elf_x86_64  -s -o hello hello.o
+./hello
+
+
+
