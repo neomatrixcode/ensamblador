@@ -1,0 +1,2 @@
+nuevo duhola archivo un documento
+leyendo un archivo con ensamblador
